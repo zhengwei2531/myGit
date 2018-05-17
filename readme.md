@@ -67,3 +67,7 @@
 	- git remote add origin https://github.com/zhengwei2531/myGit.git 关联
 	- git push -u origin master 推送(由于远程库是空的，我们第一次推送master分支时，加上了-u参数，Git不但会把本地的master分支内容推送的远程新的master分支，还会把本地的master分支和远程的master分支关联起来，在以后的推送或者拉取时就可以简化命令。)
 - 4.git push origin master：以后可以commit后运行这个命令来把本地master分支的最新修改推送至GitHub上；
+######3.2.从远程库克隆
+- git clone url
+#####4.分支管理
+######4.1.
