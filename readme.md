@@ -60,10 +60,10 @@
 	- 如果没有，打开Shell（Windows下打开Git Bash），创建SSH Key：
 		- ssh-keygen -t rsa -C "youremail@example.com"然后一路回车，使用默认值即可
 - 2.登陆GitHub，在setting中“SSH Keys”添加公钥id_rsa.pub；
-######3.1.在GitHub创建一个同名Git仓库，并且让这两个仓库进行远程同步
+######3.1.添加远程库：在GitHub创建一个同名Git仓库，并且让这两个仓库进行远程同步
 - 1.首先，登陆GitHub，然后，在右上角找到“Create a new repo”按钮，创建一个仓库(与本地同名)(全部默认)；
 - 2.成功后这个仓库是空的，GitHub告诉我们，可以从这个仓库克隆出新的仓库，也可以把一个已有的本地仓库与之关联，然后，把本地仓库的内容推送到GitHub仓库
 - 3.这里运行推送本地的命令：
 	- git remote add origin https://github.com/zhengwei2531/myGit.git 关联
 	- git push -u origin master 推送(由于远程库是空的，我们第一次推送master分支时，加上了-u参数，Git不但会把本地的master分支内容推送的远程新的master分支，还会把本地的master分支和远程的master分支关联起来，在以后的推送或者拉取时就可以简化命令。)
-- 4.以后可以commit后运行命令git push origin master来把本地master分支的最新修改推送至GitHub上；
+- 4.git push origin master：以后可以commit后运行这个命令来把本地master分支的最新修改推送至GitHub上；
