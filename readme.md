@@ -22,8 +22,10 @@
 ######2.1.版本退回
 - git log：显示从最近到最远的提交日志
 	- git log --pretty=oneline：一行的简要日志
+- git reset --hard HEAD^：回退到上一个版本(即未修改到本版本前)
+- git reset --hard xxx：跳转到commit id前几位为xxx的版本
 
-
-
-
-圣诞节疯狂了就是打开了丰盛的价格
+---
+	HEAD指向的版本就是当前版本，因此，Git允许我们在版本的历史之间穿梭，使用命令git reset --hard commit_id。
+	穿梭前，用git log可以查看提交历史，以便确定要回退到哪个版本。
+	要重返未来，用git reflog查看命令历史，以便确定要回到未来的哪个版本。
