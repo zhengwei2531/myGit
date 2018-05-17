@@ -9,3 +9,6 @@
 - git add命令告诉Git，把文件添加到仓库
 	(git add xxx ：添加xxx,git add .：添加所有)
 - git commit -m "xxx"：把文件提交到仓库，-m后面输入的是本次提交的说明
+######2.时光穿梭机
+- git status命令可以让我们时刻掌握仓库当前的状态
+- git diff xx：顾名思义就是查看xx文件的difference，显示的格式正是Unix通用的diff格式
