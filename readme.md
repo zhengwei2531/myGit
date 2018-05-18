@@ -71,10 +71,17 @@
 - git clone url
 #####4.分支管理
 ######4.1.创建与合并分支
-- git checkout -b dev：创建dev分支，然后切换到dev分支——git checkout命令加上-b参数表示创建并切换
-- git branch：命令查看当前分支
+- git checkout -b dev：创建dev分支，然后切换到dev分支——git checkout命令加上-b参数表示创建并切换；
+- git branch：命令查看当前分支；
+- git checkout master：在dev分支的工作完成后，可以用这个命令切换回master分支；
+	- git merge dev：把dev分支的工作成果合并到master分支上，git merge命令用于合并指定分支到当前分支；
+	- git branch -d dev：删除dev分支；
 
-
-
-
-dev分支
+---
+	Git鼓励大量使用分支：
+	查看分支：git branch
+	创建分支：git branch <name>
+	切换分支：git checkout <name>
+	创建+切换分支：git checkout -b <name>
+	合并某分支到当前分支：git merge <name>
+	删除分支：git branch -d <name>
