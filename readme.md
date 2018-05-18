@@ -72,3 +72,9 @@
 #####4.分支管理
 ######4.1.创建与合并分支
 - git checkout -b dev：创建dev分支，然后切换到dev分支——git checkout命令加上-b参数表示创建并切换
+- git branch：命令查看当前分支
+
+
+
+
+dev分支
