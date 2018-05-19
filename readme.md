@@ -87,4 +87,8 @@
 	创建+切换分支：git checkout -b <name>
 	合并某分支到当前分支：git merge <name>
 	删除分支：git branch -d <name>
+<<<<<<< HEAD
 ######4.92.
+=======
+######4.0.
+>>>>>>> feature
